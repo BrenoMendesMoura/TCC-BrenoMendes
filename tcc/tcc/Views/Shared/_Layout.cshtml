@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - GOD'SFOOD</title>
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    <link rel="shortcut icon" href="~/img/WhatsApp Image 2021-04-25 at 13.44.39.jpeg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <style>
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light mb-1 box-shadow bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="~/img/inicio/godsfood3-removebg-preview.png" width="100px" height="100px">
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="navbar-brand text-white" asp-area="" asp-page=@Html.ActionLink("GOD'SFOOD", "Index", "Home")</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" asp-area="" asp-page=@Html.ActionLink("Sobre", "principal", "Home")</a>
+                </li>
+                <p
+                <li class="nav-item active">
+                    <a class="nav-link text-white" asp-area="" asp-page=@Html.ActionLink("Parceria", "parceria", "Home")</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-page=@Html.ActionLink("Receitas", "receita1", "Home")</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorias
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" asp-page=@Html.ActionLink("Caseiro", "receita1", "Home")</a>
+                        <a class="dropdown-item" asp-page=@Html.ActionLink("Doces", "receita2", "Home")</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" asp-page=@Html.ActionLink("Salgados", "receita3", "Home")</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">@Session["Username"].ToString()</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="@Url.Action("Login","Home")">Sair</a>
+                        </div>
+                </li>
+            </ul>
+</div>
+    </nav>
+    <div class="slider">
+        <ul>
+            <li><img src="~/img/banner.png"></li>
+            <li><img src="~/img/banner.png"></li>
+        </ul>
+
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <br />
+
+
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-5 pb-2">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+                <!-- yt -->
+                <a class="btn btn-outline-light " href="https://www.youtube.com/watch?v=p_SYZ36KoH4" role="button">
+                    <i class="fa fa-youtube"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light" href="mailto:godsfoodd@gmail.com" role="button">
+                    <i class="fa fa-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light " href="https://www.instagram.com/_god.sfood/" role="button">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light " href="https://www.linkedin.com/in/brenomendesmoura/" role="button">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light " href="https://github.com/BrenoMendesMoura/GODSFOOD" role="button">
+                    <i class="fa fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2021 - GOD'SFOOD - ETEC<br />
+            Envie sua Receita para
+            <a class="text-white" href="mailto:godsfoodd@gmail.com">nosso Email</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+
+</body>
+</html>

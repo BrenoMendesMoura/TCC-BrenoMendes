@@ -1,0 +1,840 @@
+﻿@{
+    ViewBag.Title = "Caseiro";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+    <br />
+    
+    <hr />
+    <br />
+    <p class="text-center">Categorias</p>
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link bg-danger text-white" asp-page=@Html.ActionLink("Caseiro", "receita1", "Home")</a>
+        <a class="nav-item nav-link" asp-page=@Html.ActionLink("Doces", "receita2", "Home")</a>
+        <a class="nav-item nav-link" asp-page=@Html.ActionLink("Salgados", "receita3", "Home")</a>
+    </nav>
+    <br />
+    <hr />
+
+
+
+
+
+    <div class="container overflow-hidden">
+        <div class="row gy-5">
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/arroz.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Arroz</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongARROZ">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/feijao.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body ">
+                            <h5 class="card-title">Feijao</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongFEIJAO">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/bife.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bife</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongBIFE">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/strogonoff.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Strogonoff</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongSTRO">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/frango.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Frango</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongFRANGO">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/polenta.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Polenta</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongPOLENTA">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/mandioca.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Mandioca</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongMANDIOCA">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/Feijoada.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Feijoada</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongFEIJOADA">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/maionese.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Maionese</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongMAIONESE">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/sopa.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Sopa</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongSOPA">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/linguiça.jfif" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Linguiça</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongLINGUIÇA">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3  bg-transparent">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img-top" src="~/img/receitas/pure.jpeg" width="140px" height="280px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Pure</h5>
+                            <p class="card-text">
+                                <hr class="bg-danger" />
+                                Com vídeo explicativo
+                                <hr class="bg-danger" />
+                                Dificuldade: Fácil
+                                <hr class="bg-danger" />
+                                Ingredientes simples
+                            </p>
+                            <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongPURE">
+                                Receita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- PURE -->
+    <div class="modal fade" id="exampleModalLongPURE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongPURE" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        1 kg de batata<br>
+                        1/2 xícara de leite<br>
+                        2 colheres (sopa) de margarina<br>
+                        sal a gosto<br>
+                        1 dente de alho espremido
+                    </p>
+
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Cozinhe as batatas até ficarem bem moles.<br>
+
+                    Descasque-as ainda quentes e esprema as batatas no espremedor.<br>
+
+                    Despeje as batatas em um recipiente e acrescente a margarina, o sal e o alho, e mexa até que a margarina derreta por completo.<br>
+
+                    Acrescente o leite aos poucos e continue mexendo.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ARROZ-->
+    <div class="modal fade" id="exampleModalLongARROZ" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        1 xícara de arroz lavado<br>
+                        2 xícaras de água fervente<br>
+                        1 dente de alho amassado<br>
+                        1/4 de cebola picada<br>
+                        azeite o suficiente<br>
+                        sal a gosto
+                    </p>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Refogue o alho e a cebola no azeite.<br>
+
+                    Coloque o arroz e deixe fritar por cerca de 30 segundos.<br>
+
+                    Adicione a água fervente e o sal.<br>
+
+                    Abaixe o fogo e deixe cozinhar até a água quase secar<br>
+
+                    Tampe a panela e aguarde cerca de 20 minutos antes de servir.<br>
+
+                    Se desejar fazer mais, é só seguir as proporções, principalmente da água.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/w80MqIP8C2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FEIJAO-->
+    <div class="modal fade" id="exampleModalLongBIFE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        2 bifes
+                        1 cebola grande picada em rodelas<br>
+                        Sal a gosto<br>
+                        2 cabeças de alho<br>
+                        4 colheres de maionese<br>
+                        1/2 xícara de água<br>
+
+                        <BR>
+                        <b>MODO DE PREPARO</b><br>
+                        Temper e frite o bife ao seu gosto em uma frigideira.<br>
+                        Após resguarde os bifes em um refratário ou travessa.<br>
+                        Na mesma panela dos bifes doure a cebola picada em rodelas, adicione o alho, após adicione a água.<br>
+                        Deixe cozinhar um pouco, até a cebola amolecer.<br>
+                        Após feito isso adicione a maionese e deixe engrossar.<br>
+                        Acrescente em cima dos bifes o creme com as cebolas e está pronto.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BIFE-->
+    <div class="modal fade" id="exampleModalLongFEIJAO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        2 xícaras (chá) de feijão rajado (ou carioca, ou rosinha)<br>
+                        4 xícaras (chá) de água<br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        Coloque o feijão numa peneira e lave sob água corrente. Transfira os grãos para uma tigela e cubra com a água – se algum boiar, descarte.<br>
+                        Cubra a tigela com um prato e deixe o feijão de molho por 12 horas.<br>
+                        Troque a água uma vez neste período – o remolho diminui o tempo de cozimento e elimina as substâncias que deixam o feijão indigesto.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--STROGONOFF-->
+    <div class="modal fade" id="exampleModalLongSTRO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        3 peitos de frango cortados em cubos<br>
+                        1 dente de alho picado<br>
+                        sal e pimenta a gosto<br>
+                        1 cebola picada<br>
+                        2 colheres (sopa) de maionese<br>
+                        1 colher de manteiga<br>
+                        1/2 copo de ketchup<br>
+                        1/3 copo de mostarda<br>
+                        1 copo de cogumelos<br>
+                        1 copo de creme de leite<br>
+                        batata palha a gosto<br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        3 peitos de frango cortados em cubos<br>
+                        1 dente de alho picado<br>
+                        sal e pimenta a gosto<br>
+                        1 cebola picada<br>
+                        2 colheres (sopa) de maionese<br>
+                        1 colher de manteiga<br>
+                        1/2 copo de ketchup<br>
+                        1/3 copo de mostarda<br>
+                        1 copo de cogumelos<br>
+                        1 copo de creme de leite<br>
+                        batata palha a gosto<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FRANGO-->
+    <div class="modal fade" id="exampleModalLongFRANGO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        12 pedaços de frango cortados na junta (passarinho)<br>
+                        5 dentes de alho amassados com sal a gosto<br>
+                        1 cebola bem picada<br>
+                        4 colheres (sopa) de cheiro-verde bem picado<br>
+                        5 colheres (sopa) de suco de limão<br>
+                        1 colher (café) de tempero baiano<br>
+                        1 xícara de farinha de trigo<br>
+                        1 colher (sopa) de orégano<br>
+                        1 colher (chá) de fermento em pó<br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        Misture em tigela, com os pedaços de frango, o alho amassado, a cebola, o cheiro verde, o limão e tempero baiano.</br>
+                        Deixe descansar por 10 minutos.<br>
+                        Em uma tigela à parte, misture a farinha de trigo, o orégano e o fermento.<br>
+                        Coloque a segunda mistura em cima da primeira e tape, agitando bem, para que a farinha e os ingredientes se misturem bem aos pedaços de frango.<br>
+                        Frite em panela alta, com óleo bem quente, deixando dourar (aproximadamente 15 minutos).<br>
+                        Retire, coloque em papel toalha para escorrer e disponha numa travessa, enfeitando com salsa picada.<br>
+                        Ficam bem crocantes, tais os que são feitos em lanchonetes especializadas, a grande diferença é o sabor bem mais agradável e caseiro.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POLENTA-->
+    <div class="modal fade" id="exampleModalLongPOLENTA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        2 litros de água<br>
+                        400 g de fubá<br>
+                        2 colheres (sopa) de manteiga<br>
+                        1 colher (sopa) de sal<br>
+
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        Em uma panela, leve a água ao fogo e acrescente o sal e a manteiga.<br>
+                        Quando iniciar a fervura, acrescente o fuba e mexa sem parar para não empelotar.<br>
+                        Deixe a polenta cozinhar por 30 minutos em fogo baixo.<br>
+                        Despeje a polenta em um refratário, salpique com parmesão e cubra com o molho de sua preferência.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MANDIOCA-->
+    <div class="modal fade" id="exampleModalLongMANDIOCA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        250 g de mandioca<br>
+                        óleo suficiente para fritá-las<br>
+                        6 dentes de alho grandes espremidos (quanto mais, melhor)<br>
+                        sal a gosto <br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        Lave as mandiocas.<br>
+                        Deixe-as de molho em água para facilitar o descascar.<br>
+                        Descasque-as e corte em pedaços de aproximadamente 7 cm de comprimento.<br>
+                        Cozinhe os pedaços na panela de pressão, por 30 minutos, de modo a deixá-los al dente.<br>
+                        Após o cozimento, corte-as, ainda quentes, tipo palito e frite-as em óleo quente até dourar.<br>
+                        Retire-as e coloque-as em papel absorvente e reserve.<br>
+                        Unte uma outra panela com um pouco do óleo que usou para fritar a mandioca.<br>
+                        Frite o alho espremido até dourá-lo.<br>
+                        Junte aí as mandiocas já fritas.<br>
+                        Salpique sal ou fondor e sirva.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FEIJOADA-->
+    <div class="modal fade" id="exampleModalLongFEIJOADA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        1 Kg de feijão preto<br>
+                        100 g de carne seca<br>
+                        70 g de orelha de porco<br>
+                        70 g de rabo de porco<br>
+                        70 g de pé de porco<br>
+                        100 g de costelinha de porco<br>
+                        50 g de lombo de porco<br>
+                        100 g de paio<br>
+                        150 g de lingüiça portuguesa<br>
+                        Tempero:<br>
+                        2 cebolas grandes picadinhas<br>
+                        1 maço de cebolinha verde picadinha<br>
+                        3 folhas de louro<br>
+                        6 dentes de alho<br>
+                        Pimenta do reino a gosto<br>
+                        1 ou 2 laranjas<br>
+                        40 ml de de pinga<br>
+                        Sal se precisar<br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        Coloque as carnes de molho por 36 horas ou mais, vá trocando a água várias vezes, se for ambiente quente ou verão, coloque gelo por cima ou em camadas frias.<br>
+                        Coloque para cozinhar passo a passo: as carnes duras, em seguida as carnes moles.<br>
+                        Quando estiver mole coloque o feijão, e retire as carnes.<br>
+                        Finalmente tempere o feijão.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MAIONESE-->
+    <div class="modal fade" id="exampleModalLongMAIONESE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        6 batatas grandes<br>
+                        5 cenouras<br>
+                        200 g de vagem<br>
+                        1 lata de milho<br>
+                        1 lata de ervilha<br>
+                        1 cebola picada<br>
+                        Salsinha, cebolinha e manjericão a gosto<br>
+                        1 talo de salsão picadinho<br>
+                        Sal, pimenta e orégano a gosto<br>
+                        Suco de 2 limões<br>
+                        Azeite a gosto<br>
+                        1 vidro de maionese<br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        Leve as batatas, cenouras e vagem para cozinhar, pique em cubinhos.<br>
+                        Em uma tigela grande, misture os legumes cozidos, a cebola, milho e ervilha, o cheiro verde, salsão.<br>
+                        Misture bem.<br>
+                        Tempere com limão, azeite, sal, pimenta e orégano, misture bem e prove o sal. Junte a maionese e mexa até ficar uniforme.<br>
+
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SOPA-->
+    <div class="modal fade" id="exampleModalLongSOPA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        1 cebola média picada<br>
+                        250 g de carne bovina (de preferência músculo ou costela)<br>
+                        1 tomate médio picado<br>
+                        2 batatas médias cortadas em cubos<br>
+                        2 cenouras médias cortadas em cubos<br>
+                        2 mandioquinhas médias cortadas em cubos<br>
+                        12 vagens picadas<br>
+                        2 xícaras de macarrão (tipo argolinha ou conchinha ou ave maria ou cabelo de anjo)<br>
+                        1 tablete de caldo de carne<br>
+                        1 envelope de tempero sazon<br>
+                        1 pitada de pimenta do reino ou pimenta calabresa<br>
+                        1 xícara de salsinha e cebolinha bem picadinhas<br>
+                        Sal a gosto<br>
+                        Água até um pouco mais de a metade da panela de pressão
+                    </p>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Coloque um fio de óleo na panela de pressão.<br>
+                    Acrescente a cebola e deixe dourar.<br>
+                    Acrescente a carne bovina e deixe dourar.<br>
+                    Acrescente o tomate picado.<br>
+                    Coloque o caldo de carne e o envelope de tempero tipo sazon.<br>
+                    Junte as batatas, as cenouras, as mandioquinhas e as vagens e deixe refogar por 3 minutinhos (sempre mexendo para não grudar no fundo da panela).<br>
+                    Adicione a salsinha e a cebolinha, a pimenta, o sal e, por último, a água.<br>
+                    Obs: A água deve ser adicionada até que ultrapasse um pouco mais da metade da panela de pressão.<br>
+                    Tampe a panela de pressão e deixe cozinhar por 40 minutos.<br>
+                    Após os 40 minutos, destampe a panela e acrescente o macarrão.<br>
+                    Assim que o macarrão estiver cozido, desligue a panela e pode servir.<br>
+                    Dica: Não deixe o macarrão muito mole.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--LINGUIÇA-->
+    <div class="modal fade" id="exampleModalLongLINGUIÇA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        1/2 kg de linguiça toscana
+                        1 cebola<br>
+                        1 pimentão<br>
+                        2 tomates<br>
+                        2 dentes de alho<br>
+                        2 colheres de sopa de azeite de oliva<br>
+                        2 colheres de sopa de molho de tomate<br>
+                        400 ml de água<br>
+                        1 pitada de pimenta do reino<br>
+                        1 pitada de sal<br>
+                        1 pitada de orégano<br>
+                        1 pitada de cominho<br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        Em uma panela de pressão coloque a linguiça para cozinhar nos 400 ml de água (ou uma quantidade de água que cubra a linguiça) por dez minutos (após pegar pressão).<br>
+                        Lave a linguiça apenas com água corrente e corte-a em rodelas de 1/2 centímetro mais ou menos.<br>
+                        Corte a cebola o pimentão e os tomates em rodelas.<br>
+                        Em uma panela refogue a cebola o pimentão e a linguiça no azeite .<br>
+                        Adicione o alho picado e os demais temperos.<br>
+                        Por último adicione os tomates e o extrato de tomate e cozinhe por cerca de dez minutos.<br>
+                        Bom apetite.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PURE-->
+    <div class="modal fade" id="exampleModalLongPURE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>INGREDIENTES</b><br>
+                    <hr>
+                    <p>
+                        2 xícaras (chá) de feijão rajado (ou carioca, ou rosinha)<br>
+                        4 xícaras (chá) de água<br>
+                        <br>
+                        <b>MODO DE PREPARO</b><br>
+                        <hr>
+                        Coloque o feijão numa peneira e lave sob água corrente. Transfira os grãos para uma tigela e cubra com a água – se algum boiar, descarte.<br>
+                        Cubra a tigela com um prato e deixe o feijão de molho por 12 horas.<br>
+                        Troque a água uma vez neste período – o remolho diminui o tempo de cozimento e elimina as substâncias que deixam o feijão indigesto.<br>
+                        <br>
+                        <b>Vídeo Explicativo</b>
+                        <hr>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

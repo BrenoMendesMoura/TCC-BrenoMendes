@@ -1,0 +1,903 @@
+﻿@{
+    ViewBag.Title = "Salgados";
+}
+
+
+<br />
+<hr />
+<br />
+<p class="text-center">Categorias</p>
+<nav class="nav nav-pills nav-fill">
+    <a class="nav-item nav-link" asp-page=@Html.ActionLink("Caseiro", "receita1", "Home")</a>
+    <a class="nav-item nav-link" asp-page=@Html.ActionLink("Doces", "receita2", "Home")</a>
+    <a class="nav-item nav-link bg-danger text-white" asp-page=@Html.ActionLink("Salgados", "receita3", "Home")</a>
+</nav>
+<br />
+<hr />
+
+
+
+<div class="container overflow-hidden">
+    <div class="row gy-5">
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/torta.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Torta</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongTorta">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/croqueta.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Croqueta</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongCroqueta">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/avocado.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Avocado</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongAvocado">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/tapioca.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tapioca</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongTapioca">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/crepioca.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Crepioca</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongCrepioca">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/pão2.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pão Integral</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongPão">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/pastel.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastel</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongPastel">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/paoq.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pão de Queijo</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongPão2">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/coxinha.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Coxinha</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongCoxinha">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/esfirra.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Esfirra</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongEsfirra">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/quibe.jpg" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Quibe</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongQuibe">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/enroladinho.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Enroladinho</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongEnroladinho">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- torta -->
+<div class="modal fade" id="exampleModalLongTorta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <p>
+                    <b>Recheio:</b><br>
+                    500 g de peito de frango sem pele<br>
+                    1/2 litro de caldo de galinha<br>
+                    4 colheres (sopa) de óleo<br>
+                    1 dente de alho amassado<br>
+                    1 cebola picada<br>
+                    3 tomates sem pele e sem sementes<br>
+                    1 xícara (chá) de ervilhas<br>
+                    sal e pimenta-do-reino a gosto<br>
+                    <b> Massa:</b><br>
+                    250 ml de leite<br>
+                    3/4 de xícara (chá) de óleo<br>
+                    2 ovos<br>
+                    1 e 1/2 xícara (chá) de farinha de trigo<br>
+                    sal a gosto<Br>
+                    1 colher (sopa) de fermento em pó<br>
+                    queijo ralado a gosto
+                </p>
+
+                <b>MODO DE PREPARO</b><br>
+                <b>Recheio:</b><br>
+                Cozinhe o peito de frango no caldo até ficar macio.<br>
+                Separe 1 xícara (chá) de caldo do cozimento e reserve.<br>
+                Refogue os demais ingredientes e acrescente as ervilhas por último.<br>
+                Desfie o frango, misture ao caldo e deixe cozinhar até secar.<br>
+                <b>Massa:</b><br>
+                Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.<br>
+                Acrescente aos poucos a farinha, o sal e o fermento.<br>
+                Despeje metade da massa em uma forma untada e adicione o recheio sobre ela.<br>
+                Cubra com o restante de massa e o queijo ralado.<br>
+                Leve ao forno preaquecido (180° C) até dourar.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/fzBLHcDBbCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- croqueta-->
+<div class="modal fade" id="exampleModalLongCroqueta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    2 cebolas médias<br>
+                    100 g de manteiga<br>
+                    1 colher (sopa) de açúcar<br>
+                    1 colher (café) de sal (ou o quanto bastar)<br>
+                    350 ml de leite quente<br>
+                    60 a 100 g de farinha de trigo<br>
+                    2 ovos (para empanamento)<br>
+                    farinha panko ou de rosca comum (para empanamento)
+                </p>
+                <br>
+
+                <b>MODO DE PREPARO</b><br>
+                <hr>
+                Fatie a cebola fina (não muito)<br>
+                Aqueça a panela antiaderente<br>
+                Coloque a manteiga deixe aquecer e acrescente a cebola fatiada<br>
+                Deixe murchar bem<br>
+                Quando a cebola caramelizar (mostrar algumas douradinhas)<br>
+                Acrescente a colher de açúcar (ajuda a caramelizar)<br>
+                Coloque o sal e misture<br>
+                Coloque a farinha aos poucos<br>
+                Mexa para cozinhar a farinha (para o bolinho mais dourado, deixe mais tempo)<br>
+                Quando chegar na cor desejada, adicione aos poucos o leite quente e siga mexendo até desgrudar tudo da panela e formar uma massa<br>
+                Retire do fogo, coloque numa vasilha e cubra com plástico filme<br>
+                Leve à geladeira para esfriar mas rápido<br>
+                Misture 2 ovos com 100 ml de leite (para passar as bolinhas pra empanar)<br>
+                Quando esfriar, faça bolinhas e passe na farinha de trigo<br>
+                Depois passe na mistura de ovos e leite batidos e em seguida na farinha de rosca ou panko a que preferir.<br>
+                Frite em óleo quente ou na airfryer<br>
+                obs.: intolerante a glúten pode substituir a farinha de trigo por farinha de arroz ou de aveia.<br>
+                O leite integral por zero lactose.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/KaJZHZfw2Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--avocado-->
+<div class="modal fade" id="exampleModalLongAvocado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1/2 tomate<br>
+                    1/2 cebola<br>
+                    2 dentes de alho<br>
+                    1 pitada de pimenta a gosto<br>
+                    1 pitada de sal a gosto<br>
+                    2 colheres (sopa) de azeite<br>
+                    1 colher (sopa) de suco de limão<br>
+                    6 fatias de pão de forma<br>
+                    6 fatias de mussarela<br>
+                    1 abacate<br>
+
+                    <BR>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Corte o tomate e a cebola bem pequenos temperando com alho, sal, pimenta, azeite e gotas de limão a gosto.<br>
+                    Corte o abacate, retire o caroço e com uma colher raspe toda a polpa colocando num prato fundo <br>
+                    Amasse bem a polpa do abacate fazendo um purê.<br>
+                    Misture o purê com o molho preparado no passo anterior e reserve. A guacamole está pronta <br>
+                    Faça 6 torradas com o pão de forma na torradeira<br>
+                    Depois, numa assadeira, coloque as torradas e cubra com a guacamole e em seguida com a mussarela<br>
+                    Leve ao forno ou forninho uns 10 minutos só p a mussarela derreter.Agora é só saborear<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/hjIa6uQFHw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--tapioca-->
+<div class="modal fade" id="exampleModalLongTapioca" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1 pacote (500 g) de polvilho doce<br>
+                    1 colher de café de sal<br>
+                    300 ml de água<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Colocar o polvilho em uma vasilha e aos poucos acrescentar os 300 ml de água.<br>
+                    Misture com as mãos.<br>
+                    Peneirar o polvilho já molhado, em porções pequenas, ou seja, aos poucos.<br>
+                    Depois de peneirado, aquecer uma frigideira com teflon.<br>
+                    Colocar a massa de polvilho já peneirada, o suficiente para cobrir a frigideira, fazendo uma massa em forma de círculo bem fina, como se fosse panqueca.<br>
+                    Deixar por alguns minutos, até que solte da frigideira, e virar para o outro lado como se fosse omelete.<br>
+                    Após alguns minutos, está pronta para recheiar conforme o seu gosto.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/KNRWmTGK3pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--crepioca-->
+<div class="modal fade" id="exampleModalLongCrepioca" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1 colher de goma de tapioca<br>
+                    1 ovo<br>
+                    Para crepioca doce, adicione adoçante a gosto<br>
+                    Para crepioca salgada, adicione uma pitada de sal a gosto<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Em um recipiente, bata bem o ovo.<br>
+                    Adicione a goma de tapioca e bata novamente (pode bater com um garfo mesmo), até obter uma mistura homogênea.<br>
+                    Coloque todo o conteúdo em uma frigideira antiaderente levemente quente e mantenha em fogo baixo.<br>
+                    Deixe por alguns segundos e vire para dourar do outro lado.<br>
+                    Não é necessário untar com óleo, azeite ou manteiga.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/dTvocpt_G7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--pão-->
+<div class="modal fade" id="exampleModalLongPão" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1 kg de farinha de trigo sem fermento (reserve 1 xícara ou 120 g, só use-a se for necessário)<br>
+                    400 ml de leite morno<br>
+                    2 ovos (remova a película ou pele da gema)<br>
+                    45 g de fermento biológico fresco ou 3 tabletes de 15 g cada (em temperatura ambiente)<br>
+                    1 xícara de açúcar (200 g)<br>
+                    1/2 colher (sopa) de sal<br>
+                    Dica: se preferir pão salgado, leia as informações adicionais ao final da receita<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Em um liquidificador, coloque todos os ingredientes, menos o sal e a farinha (o sal mata o fermento).<br>
+                    Bata até obter uma consistência líquida, cremosa e espumosa (cuidado com a temperatura do leite, pois ele deve estar morno e não quente; se estiver quente, ele matará o seu fermento).<br>
+                    Despeje esse líquido em uma bacia e adicione metade da farinha e misture com uma colher de pau.<br>
+                    A massa ficará mole e grudenta.<br>
+                    Reserve 1 xícara de farinha e adicione o resto dela à massa junto com o sal.<br>
+                    A massa ficará macia e um pouco pegajosa.<br>
+                    Nesse momento, ligue seu forno em fogo baixo por 5 minutos e desligue-o.<br>
+                    Os pães serão colocados nele para que o calor os faça crescer, enquanto descansam.<br>
+                    Enfarinhe uma superfície e sove a massa com carinho até que ela desgrude das mãos.<br>
+                    Só em último caso, adicione o restante da farinha: isso deixará o pão mais leve e fofo.<br>
+                    Experimente e corrija o sabor da massa conforme seu paladar.<br>
+                    Divida a massa em duas partes iguais e abra cada uma com um rolo, enfarinhando a superfície novamente: neste momento a massa ficará macia e lisa.<br>
+                    Unte com um pouquinho de óleo ou margarina a uma forma de bolo média de 30 x 24 ou duas formas próprias para pão de 27 x 11 (prefiro forma para pães, pois o pão cresce bonito e para para cima)<br>
+                    Enrole os pães no tamanho da forma escolhida e faça pequenos cortes em “X” em cima da massa para decorar.<br>
+                    Leve os pães ao forno que você aqueceu por 5 minutos e desligou.<br>
+                    Deixe-os descansar, para que cresçam, estimulados pelo calor morno.<br>
+                    Cuidado: se o forno estiver muito quente, seus pães vão assar antes de crescer e a massa ficará embatumada.<br>
+                    Aguarde uns 20 a 30 minutos e, se tudo correr bem, ela crescerá lisa e arredondada, podendo até ultrapassar as bordas da forma.<br>
+                    Se ela não crescer, não se preocupe.<br>
+                    Mesmo que a massa não tenha crescido após esse tempo, ligue o forno em temperatura média (180º C) e deixe ela assar por uns 30, 40 ou 45 minutos (depende do seu forno).<br>
+                    O fermento "preguiçoso" poderá "despertar" à força nesse momento.<br>
+                    Quando sentir o cheirinho de pão assado, aumente um pouco chama do fogo para que a casca escureça.<br>
+                    Se deixar por muito tempo, ela ficará amarga.<br>
+                    Deixe esfriar dentro ou fora do forno.<br>
+                    O pão deverá estar leve, fofo, cheio de furinhos (aerado), delicado, cheiroso e quase desmanchando quando cortado.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/kVBIClSAO74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--pastel-->
+<div class="modal fade" id="exampleModalLongPastel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    <b>MASSA:</b>
+                    1 kg de farinha de trigo refinado com fermento<br>
+                    200 g de margarina<br>
+                    1 colher (sobremesa) de sal<br>
+                    100 ml de água em temperatura ambiente<br>
+                    <b> RECHEIO:</b>
+                    1 kg de carne bovina de 1ª moída 2 vezes<br>
+                    Sal a gosto<br>
+                    Pimenta do reino a gosto<br>
+                    2 dentes de alho<br>
+                    1 pimentão verde pequeno<br>
+                    1 cebola média<br>
+                    <b>PARA FINALIZAR:</b>
+                    óleo quente<br>
+                    papel-toalha<br>
+                </p>
+                <br>
+
+                <b>MODO DE PREPARO</b><br>
+                <hr>
+                <b>MASSA:</b>
+                Misture 900 g da farinha com a margarina, adicione o sal e por último a água.<br>
+                Deixe descansar por 1 hora, coberta com um pano.<br>
+                <b>RECHEIO:</b><br>
+                Coloque a carne moída em uma panela e leve ao fogo.<br>
+                Quando começar a ferver, mexa de vez em quando, que começará a soltar água.<br>
+                Quando toda a carne já estiver pálida, comece a colocar os temperos.<br>
+                Primeiro o alho amassado, o colorau e a pimenta-do-reino, depois de incorporado, coloque a cebola e o pimentão.<br>
+                Continue mexendo e desmanchando os torrões deixando a carne soltinha, a medida que enxuga.<br>
+                Por último coloque o sal e mexa.<br>
+                Essa carne deve estar sequinha.<br>
+                <b>MONTAGEM DO PASTEL:</b><br>
+                Cilindre a massa, não muito fina, e corte com um copo inox.<br>
+                Coloque uma pequena porção da carne no centro, passe água com o dedo nas bordas da massa, dobre e aperte para evitar que abra durante a fritura, que deve ser em óleo de soja bem quente.<br>
+                Em seguida, escorra os pasteis em um prato com papel-toalha.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/wlyIqpFrILo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--pão de queijo-->
+<div class="modal fade" id="exampleModalLongPão2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    3 ovos inteiros<br>
+                    3 xícaras (chá) de polvilho doce<br>
+                    1 xícara (chá) de leite<br>
+                    1 xícara (chá) de óleo<br>
+                    1 colher (café) de sal<br>
+                    150 g de queijo parmesão ralado<br>
+                    1 colher (sopa) de fermento em pó<br>
+
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Preaqueça o forno em 180º C por 20 minutos e unte com óleo uma forma redonda com furo central.<br>
+                    Bata no liquidificador os ovos, o leite e o óleo.<br>
+                    Em uma vasilha, misture aos poucos o polvilho, o queijo, e a mistura do liquidificador.<br>
+                    Adicione por último o fermento e mexa delicadamente por alguns segundos.<br>
+                    Despeje a massa na forma e leve ao forno por 30 minutos.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <HR>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/41NRLfNOR1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--coxinha-->
+<div class="modal fade" id="exampleModalLongCoxinha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+
+                <p>
+                    <b>Massa:</b>
+                    1 xícara (chá) de água<br>
+                    2 xícaras (chá) de leite<br>
+                    2 tabletes de caldo de bacon ou costela<br>
+                    1/2 xícara (chá) de batata cozida e amassada<br>
+                    1 colher (sopa) de manteiga<br>
+                    2 e 1/2 xícaras (chá) de farinha de trigo<br>
+                    margarina para untar a forma<br>
+                    <b>Para empanar:</b>
+                    farinha de rosca<br>
+                    2 ovos batidos<br>
+                    óleo para fritar<br>
+                    <b>Recheio</b>
+                    1 e 1/2 kg de frango<br>
+                    3 colheres (sopa) de requeijão cremoso<br>
+                    2 colheres (sopa) de azeite<Br>
+                    1 cebola pequena<br>
+                    2 dentes de alho<br>
+                    tempero a gosto<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    <b>Recheio:</b>
+                    Em uma panela, coloque o azeite, o alho picado e a cebola.<br>
+                    Espere fritar e adicione o frango desfiado e os temperos de sua preferência.<BR>
+                    Refogue tudo por 5 minutos, retire do fogo, acrescente o requeijão, misture e reserve.<BR>
+                    <b>Massa:</b>
+                    Em uma panela grande, adicione a água, o leite, o tablete de caldo, a batata, a manteiga e deixe ferver. Acrescente a farinha de trigo de uma só vez, mexendo até soltar do fundo da panela.
+                    Despeje a massa sobre uma superfície lisa e untada, sove bem e deixe esfriar.<BR>
+                    Abra a massa com as mãos, recheie e modele em forma de coxinha.<BR>
+                    Passe a massa modelada pelo ovo batido e pela farinha de rosca.<BR>
+                    Frite em óleo quente até dourar e escorra sobre papel absorvente.<br>
+                    <BR>
+                    <B>Vídeo Explicativo</B>
+                    <hr>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/9ngZIyKQgHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--esfirra-->
+<div class="modal fade" id="exampleModalLongEsfirra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    <b>Massa:</b>30 g de fermento biológico<BR>
+                    1 copo de leite morno<br>
+                    1 colher (chá) de açúcar<br>
+                    1 colher (sobremesa) de sal<br>
+                    600 g de farinha de trigo (aproximadamente)<br>
+                    1/2 xícara de óleo<br>
+                    1 ovo<br>
+                    <b>Recheio:</b>500 g de patinho moído<br>
+                    3 colheres (sopa) de azeite<br>
+                    1 cebola<br>
+                    2 dentes de alho<br>
+                    cheiro-verde<br>
+                    3 tomates sem semente<br>
+                    pimenta a gosto<br>
+
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                <p>
+                    <b>RECHEIO:</b>
+                    Frite no azeite, a cebola e o alho até que dourem, coloque a carne e o sal, deixe refogar.<br>
+                    Acrescente o tomate, cheiro-verde e a pimenta, cozinhe por mais 5 minutos.<br>
+                    Deixe esfriar para utilizar como recheio.<br>
+                    <b>MASSA:</b>
+                    Coloque em uma tigela, o fermento (dissolvido no leite morno), o sal, açúcar e 2 xícaras de farinha de trigo, misture e deixe dobrar de volume.<br>
+                    Logo, acrescente o ovo, o óleo e o restante da farinha, até a massa se desprender da mão, deixando-a macia.<br>
+                    Sove um pouco.<br>
+                    Divida a massa em bolinhas do mesmo tamanho, abra uma a uma, recheie e modele.<br>
+                    Coloque as esfirras em uma assadeira, pincele com gema de ovo.<br>
+                    Deixe crescer.<br>
+                    Asse em forno médio.<br>
+                </p>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <HR>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/q3x8j9zi9Nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--quibe-->
+<div class="modal fade" id="exampleModalLongQuibe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1 kg de carne moída<br>
+                    1 kg de farinha de trigo para quibe<br>
+                    2 colheres (sopa) de manteiga<br>
+                    2 cebolas picadas<br>
+                    sal a gosto<br>
+                    pimenta do reino a gosto<br>
+                    hortelã a gosto
+                </p>
+                <br>
+                <b>MODO DE PREPARO</b><br>
+                <hr>
+                Coloque a farinha de trigo para quibe de molho por aproximadamente 3 horas, depois escorra e esprema a farinha de trigo.<br>
+                Misture a carne moída, a manteiga, a cebola picada, o sal, a pimenta e o hortelã, antes de fritar se preferir passe por um moedor ou processador antes de fritar.<br>
+                Enrole no formato de quibe e depois frite no óleo quente.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/lY3ddipbABQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Enroladinho-->
+<div class="modal fade" id="exampleModalLongEnroladinho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    10 fatias de pão de fôrma sem casca<br>
+                    3 colheres (sopa) de azeite de oliva<br>
+                    1 sachês de Tempero SAZÓN® Laranja<br>
+                    10 fatias de mussarela<br>
+                    10 azeitonas verdes cortadas em rodelas<br>
+                    5 salsichas cortadas ao meio no sentido longitudinal, aferventadas<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Com o auxílio de um rolo, afine as fatias de pão de fôrma.<br>
+                    Espalhe o azeite previamente misturado com o Tempero SAZÓN® nos dois lados de cada fatia e coloque cada uma delas sobre um pedaço de papel alumínio.<br>
+                    Distribua a mussarela, as rodelas de azeitona e a salsicha pelas fatias de pão. Enrole como um mini rocamboles e embrulhe com o papel alumínio.<br>
+                    Transfira para uma assadeira e leve ao forno quente (200ºC) por 15 minutos.<br>
+                    Retire do forno, desembrulhe e sirva em seguida.Esta é uma ótima preparação para ser servida no lanche da tarde ou em uma festa de criança.<br>
+                    Bom apetite.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/R0Cb46we2QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--PURE-->
+<div class="modal fade" id="exampleModalLongPURE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <p>
+                    2 xícaras (chá) de feijão rajado (ou carioca, ou rosinha)<br>
+                    4 xícaras (chá) de água<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    Coloque o feijão numa peneira e lave sob água corrente. Transfira os grãos para uma tigela e cubra com a água – se algum boiar, descarte.<br>
+                    Cubra a tigela com um prato e deixe o feijão de molho por 12 horas.<br>
+                    Troque a água uma vez neste período – o remolho diminui o tempo de cozimento e elimina as substâncias que deixam o feijão indigesto.<br>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

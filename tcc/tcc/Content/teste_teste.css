@@ -1,0 +1,193 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 0, 0);
+}
+
+/*muda cor da fonte*/
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+    .fullscreen-video-wrap video {
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+.header-overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    background: #000000ab;
+    opacity: 0,5;
+}
+
+.header-content {
+    z-index: 2;
+    text-align: center;
+    max-width: 960px;
+    margin: auto;
+}
+
+
+
+
+
+.btn {
+    background: #f44336;
+    color: #ffffff55;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:960px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+
+
+.button {
+    background-color: #ffffff55;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.topnav a:hover {
+    border-bottom: 3px solid rgba(255, 0, 0, 0.473);
+}
+
+.topnav a.active {
+    border-bottom: 3px solid rgba(255, 0, 0, 0.459);
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.slider {
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 200%;
+        animation: cambio 10s infinite;
+    }
+
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 0;
+    }
+
+
+    50% {
+        margin-left: -100%;
+    }
+
+    75% {
+        margin-left: -100%;
+    }
+}
+
+
+
+

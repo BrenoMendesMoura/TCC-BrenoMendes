@@ -1,0 +1,823 @@
+﻿@{
+    ViewBag.Title = "Doces";
+}
+
+
+<br />
+<hr />
+<br />
+<p class="text-center">Categorias</p>
+<nav class="nav nav-pills nav-fill">
+    <a class="nav-item nav-link" asp-page=@Html.ActionLink("Caseiro", "receita1", "Home")</a>
+    <a class="nav-item nav-link bg-danger text-white" asp-page=@Html.ActionLink("Doces", "receita2", "Home")</a>
+    <a class="nav-item nav-link" asp-page=@Html.ActionLink("Salgados", "receita3", "Home")</a>
+</nav>
+<br />
+<hr />
+
+
+<div class="container overflow-hidden">
+    <div class="row gy-5">
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/brigadeiro.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Brigadeiro</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongBRIGADEIRO">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/Beijinho.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Beijinho</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongBEIJINHO">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/pavê.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pavê</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongPAVE">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/manjar.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Manjar</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongMANJAR">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/mousse.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mousse</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongMOUSSE">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/alfajor.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Alfajor</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongALFAJOR">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/BOLO.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolo</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongBOLO">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/Pão.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pão de Mel</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongPÃO">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/sorvete.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorvete</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongSORVETE">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/cupcakes.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">CupCakes</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongCUPCAKES">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/Brownie.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Brownie</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongBROWNIE">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="p-3  bg-transparent">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="~/img/receitas/cookies.jfif" width="140px" height="280px" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookies</h5>
+                        <p class="card-text">
+                            <hr class="bg-danger" />
+                            Com vídeo explicativo
+                            <hr class="bg-danger" />
+                            Dificuldade: Fácil
+                            <hr class="bg-danger" />
+                            Ingredientes simples
+                        </p>
+                        <button type="button" class="btn btn-primary  bg-danger" data-toggle="modal" data-target="#exampleModalLongCOOKIES">
+                            Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- PURE -->
+<div class="modal fade" id="exampleModalLongBRIGADEIRO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1/2 xícara de leite<br>
+                    2 colheres (sopa) de margarina<br>
+                    sal a gosto<br>
+                    1 dente de alho espremido
+                </p>
+
+                <b>MODO DE PREPARO</b><br>
+                <hr>
+                Cozinhe as batatas até ficarem bem moles.<br>
+
+                Descasque-as ainda quentes e esprema as batatas no espremedor.<br>
+
+                Despeje as batatas em um recipiente e acrescente a margarina, o sal e o alho, e mexa até que a margarina derreta por completo.<br>
+
+                Acrescente o leite aos poucos e continue mexendo.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ARROZ-->
+<div class="modal fade" id="exampleModalLongBEIJINHO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    2 latas de leite condensado<br>
+                    2 colheres (sopa) de manteiga<br>
+                    300 g de coco fresco ralado (fino)<br>
+                    açúcar cristal<br>
+                    cravos-da-índia a gosto
+                </p>
+                <br>
+                <b>MODO DE PREPARO</b><br>
+                <hr>
+                Numa panela, misture o leite condensado, a manteiga e o coco ralado.<br>
+                Leve ao fogo e misture por aproximadamente 15 minutos.<br>
+                Retire a mistura do fogo e deixe amornar.<br>
+                Modele a massa em formato de bolinhas, passe pelo açúcar cristal ou coco ralado e finalize com cravos-da-índia.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--FEIJAO-->
+<div class="modal fade" id="exampleModalLongPAVE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1 lata de creme de leite
+                    1 lata de leite (a mesma medida da lata de creme de leite)<br>
+                    2 latas de leite condensado<br>
+                    2 gemas<br>
+                    2 colheres de maisena<br>
+                    3 colheres de chocolate em pó ou achocolatado<br>
+                    biscoito maisena<br>
+                    leite para molhar os biscoitos<br>
+                    raspas de chocolate (opcional)<br>
+                    manteiga sem sal ou margarina, só para dar o ponto<br>
+                    <BR>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Primeiro, pegue a lata de leite condensado, as gemas, a maisena e o leite.<br>
+                    Coloque no fogo e deixe até que fique um creme, reserve.<br>
+                    Coloque a segunda lata de leite condensado com um pouco de margarina e o chocolate.<br>
+                    Deixe no fogo até ficar um creme tipo brigadeiro.<br>
+                    Desligue o fogo e junte com o creme de leite.<br>
+                    <br>
+                    <b>MONTAGEM</b><br><hr>
+                    Coloque primeiro o creme branco.<br>
+                    Em seguida, mergulhe os biscoitos no leite e coloque sobre o creme branco.<br>
+                    Depois, coloque o creme preto e acrescente as raspas de chocolate sobre ele.<br>
+                    Deixe no congelador durante 2 horas.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--BIFE-->
+<div class="modal fade" id="exampleModalLongMANJAR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1 litro de leite<br>
+                    1 vidro pequeno de leite de coco<br>
+                    100 g de coco ralado seco sem açúcar<br>
+                    6 colheres (sopa) amido de milho<br>
+                    8 colheres (sopa) açúcar<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Coloque o leite, o açúcar, o leite de coco e o coco ralado em uma panela, misture bem.<br>
+                    Leve ao fogo e junte o amido de milho dissolvido em um copo de leite.<br>
+                    Mexa sempre até engrossar, aguarde mais um minuto.<br>
+                    Despeje em uma forma decorada, untada com óleo ou simplesmente molhada.<br>
+                    Deixe esfriar e leve à geladeira por 2 horas.<br>
+                    Sirva com calda de ameixa ou calda de morangos.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--STROGONOFF-->
+<div class="modal fade" id="exampleModalLongMOUSSE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    1 lata de leite condesado<br>
+                    1 lata de creme de leite sem soro<br>
+                    1 lata de suco de qualquer sabor<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Adicione o leite condensado no liquidificador.<br>
+                    Depois adicione o creme de leite, logo após coloque o suco ou fruta e bata por pelo menos 2 minutos.<br>
+                    Leve a geladeira e deixe gelar por 1 hora e está pronto.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--FRANGO-->
+<div class="modal fade" id="exampleModalLongALFAJOR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    Cobertura
+                    200 g de chocolate meio amargo picado<br>
+                    Massa<br>
+                    1 xícara (chá) de manteiga em temperatura ambiente<br>
+                    1 xícara (chá) de açúcar<br>
+                    3 gemas<br>
+                    2 colheres (chá) de essência de baunilha<br>
+                    1 colher (sopa) de raspas de limão<br>
+                    1 colher (sopa) de conhaque<br>
+                    2 xícaras (chá) de farinha de trigo<br>
+                    2 xícaras (chá) de maizena<br>
+                    1 colher (sopa) de fermento em pó<br>
+                    6 colheres (sopa) de leite gelado<br>
+                    Recheio<br>
+                    300 g de doce de leite cremoso<br>
+                    2 colheres (chá) de essência de baunilha<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Ligue o forno a temperatura média.<br>
+                    Misture em uma tigela a manteiga (reserve 1 colher (sopa)), o açúcar, as gemas, a baunilha, as raspas de limão e o conhaque até ficar cremoso e homogêneo.<br>
+                    Junte, aos poucos, a farinha peneirada com a maisena e o fermento, simultaneamente com o leite.<br>
+                    Se necessário, junte mais farinha.<br>
+                    Transfira para uma superfície lisa e sove até desgrudar das mãos.<br>
+                    Deixe descansar por 15 minutos.<br>
+                    Abra a massa numa superfície enfarinhada até obter 1 cm de altura.<br>
+                    Corte em 32 círculos de 5 cm de diâmetro, e coloque-os em assadeiras, untadas com a manteiga reservada.<br>
+                    Leve ao forno por 15 minutos, ou até dourar.<br>
+                    Retire do forno, desenforme e deixe esfriar.<br>
+                    Una os círculos com o doce de leite misturado com a baunilha, formando os alfajores.<br>
+                    <hr>
+                    <b>Cobertura</b><br>
+                    Derreta o chocolate em banho-maria e banhe os alfajores, um a um.<br>
+                    Coloque-os numa fôrma forrada com papel-alumínio e leve à geladeira por 20 minutos, ou até ficar firme.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--POLENTA-->
+<div class="modal fade" id="exampleModalLongBOLO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    <b>Massa:</b>
+                    4 ovos<br>
+                    4 colheres (sopa) de chocolate em pó<br>
+                    2 colheres (sopa) de manteiga<br>
+                    3 xícaras (chá) de farinha de trigo<br>
+                    2 xícaras (chá) de açúcar<br>
+                    2 colheres (sopa) de fermento<br>
+                    1 xícara (chá) de leite<br>
+                    <b>Calda:</b>
+                    2 colheres (sopa) de manteiga<br>
+                    7 colheres (sopa) de chocolate em pó<br>
+                    2 latas de creme de leite com soro<br>
+                    3 colheres (sopa) de açúcar<br>
+                    <hr>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    <b>Massa:</b>
+                    Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.<br>
+                    Adicione o fermento e misture com uma espátula delicadamente.<br>
+                    Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.<br>
+                    <hr>
+                    <b>Calda:</b>
+                    Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.<br>
+                    Acrescente o creme de leite e misture bem até obter uma consistência cremosa.<br>
+                    Desligue o fogo e acrescente o açúcar.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--MANDIOCA-->
+<div class="modal fade" id="exampleModalLongPÃO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    3 xícaras (chá) de farinha de trigo<br>
+                    1 xícara (chá) de mel<br>
+                    1 xícara (chá) de açúcar<br>
+                    1 xícara (chá) de leite<br>
+                    2 colheres (sopa) de manteiga em temperatura ambiente<br>
+                    2 ovos<br>
+                    1 colher (sopa) de bicarbontato de sódio<br>
+                    1 colher (chá) de noz moscada<br>
+                    1 colher (chá) de cravo em pó<br>
+                    1 colher (sopa) de canela em pó<br>
+                    Manteiga e farinha de rosca, o quanto baste para untar <br>
+
+                    <b>Cobertura</b><br>
+                    200 g / 1 tablete de chocolate meio amargo, picado
+                    2 colheres (sopa) de manteiga
+                </p>
+                <hr>
+
+
+                <b>MODO DE PREPARO</b><br>
+                <hr>
+                Unte uma forma redonda ou retangular com a manteiga e a farinha de rosca.<br>
+                Ligue o forno em temperatura média (180 graus).<br>
+                Na tigela grande da batedeira, coloque o açúcar, o mel, a manteiga e os ovos inteiros (sem a casca).<br>
+                Bata muito bem.<br>
+                Acrescente alternadamente o leite e a farinha de trigo, sem parar de bater.<br>
+                Coloque primeiro uma xícara de farinha, em seguida ½ xícara de leite e assim por diante.<br>
+                Depois da última adição, pare de bater.<br>
+                Junte o bicarbonato e as especiarias.<br>
+                Misture delicadamente.<br>
+                Despeje a massa dentro da assadeira untada e leve ao forno pré-aquecido.<br>
+                Asse por 15 minutos em temperatura média, abaixe o fogo o máximo que puder e asse por mais 20 minutos.<br>
+                Para ter certeza que o bolo está assado, espete um palito.<br>
+                Se sair seco, o bolo está pronto.<br>
+                Retire do forno e passe uma faca de ponta redonda nas laterais da assadeira.<br>
+                Deixe esfriar e desenforme (coloque um prato sobre a assadeira e vire de uma vez).<br>
+                Cubra o bolo com a cobertura de chocolate.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--FEIJOADA-->
+<div class="modal fade" id="exampleModalLongSORVETE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    2 latas de leite condensado<br>
+                    600 ml de creme de leite fresco bem gelado batido em chantili (picos moles)<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Bata o leite condensado no liquidificador por 3 minutos ou até ficar com textura firme.<br>
+                    Transfira para uma tigela e incorpore o chantili delicadamente (se desejar, acrescente gotas de essência de baunilha).<br>
+                    Despeje em um pote com tampa e leve ao freezer até endurecer completamente (umas 3 horas).<br><br>
+                    Sugestão: Experimente com outros sabores. Por exemplo, incorpore chocolate derretido ao leite condensado batido ou, depois de misturar o chantili, acrescente passas ao rum, raspas ou granulado de chocolate ou morangos levemente cozidos com um pouco de açúcar.<br>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--MAIONESE-->
+<div class="modal fade" id="exampleModalLongCUPCAKES" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    Massa:
+                    3 gemas<br>
+                    2 xícaras de açúcar<br>
+                    1 colher de sopa de essência de baunilha
+                    250 ml de leite<br>
+                    1 xícara de óleo<br>
+                    3 claras em neve<br>
+                    3 e 1/2 xícaras de farinha de trigo<br>
+                    1 colher (sopa) de fermento<br>
+                    Recheio e cobertura a gosto, aqui usamos doce de leite<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Bata a gema, o açúcar e a baunilha na batedeira.<br>
+                    Em seguida, acrescente o leite e o óleo e bata mais um pouco.<br>
+                    Adicione as claras em neve, a farinha de trigo e o fermento e bata mais com o auxílio de um fouet (não bata na batedeira para que o fermento possa atuar).
+                    Disponha a massa em forminhas próprias para cupcakes (sem encher muito) e leve ao forno até dourar.<br>
+                    Após assado e frios, faça um buraco no centro de cada cupcake com uma faca.<br>
+                    Reserve a tampinha.<br>
+                    Coloque o recheio escolhido em um saco de confeitar e junte-o no furo, no centro do cupcake.<br>
+                    Coloque a tampinha e cubra o cupcake com o a cobertura desejada, aqui usamos doce de leite para rechear e para cobrir.<br>
+                    Coloque confeitos de sua preferência.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--SOPA-->
+<div class="modal fade" id="exampleModalLongBROWNIE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    6 colheres (sopa) bem cheias, de margarina sem sal<br>
+                    3/4 xícara (chá) achocolatado<Br>
+                    1/2 xícara (chá) chocolate em pó<br>
+                    1 e 1/4 xícara (chá) farinha de trigo<br>
+                    2 xícaras (chá) açúcar<br>
+                    4 ovos<br>
+                    2 pitadas de sal<br>
+                    1 colheres (chá) de extrato ou essência de baunilha<br>
+                    1 tablete de chocolate meio amargo picado em cubinhos<br>
+                    1/2 xícara (chá) de nozes picadas ou castanhas de caju granuladas
+                </p>
+                <br>
+                <b>MODO DE PREPARO</b><br>
+                <hr>
+                Misture os ovos e o açúcar.<br>
+                Em seguida, agregue todos os outros ingredientes até formar um creme uniforme.<br>
+                Despeje em uma assadeira, forrada com papel-manteiga e leve ao forno médio por 40 minutos.<br>
+                O brownie estará pronto quando a parte de cima estiver levemente corada e, ao se espetar um palito, ele esteja levemente úmido (devido ao chocolate derretido).<br>
+                Corte em quadrados ainda quente e sirva com uma bola de sorvete de creme, ou congele num saquinho para freezer.<br>
+                Para descongelar, coloque o brownie num prato de sobremesa e aqueça no micro-ondas, potência alta, por 1 minuto.<br>
+                <br>
+                <b>Vídeo Explicativo</b>
+                <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--LINGUIÇA-->
+<div class="modal fade" id="exampleModalLongCOOKIES" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Passo a Passo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>INGREDIENTES</b><br>
+                <hr>
+                <p>
+                    125 g de manteiga sem sal em temperatura ambiente<br>
+                    3/4 xícara de açúcar<br>
+                    1/2 xícara de açúcar mascavo<br>
+                    1 ovo<br>
+                    1 e 3/4 de xícara de farinha de trigo<br>
+                    1 colher (chá) de fermento em pó<br>
+                    300 g de chocolate meio amargo picado<br>
+                    1 colher (chá) de essência de baunilha<br>
+                    para fazer cookie de chocolate acrescentar 1/4 xícara de chocolate em pó<br>
+                    <br>
+                    <b>MODO DE PREPARO</b><br>
+                    <hr>
+                    Misture a manteiga, açúcar mascavo, açúcar, essência de baunilha (e chocolate em pó, se for fazer cookies com base de chocolate).<br>
+                    Adicione o ovo batido aos poucos e misture bem.<br>
+                    Acrescente a farinha aos poucos e misture bem (pode ser na mão ou na batedeira planetária)<br>
+                    Por último, adicione o fermento e misture só para incorporá-lo à massa.<br>
+                    Depois da massa bem misturada, adicione o chocolate picado.<br>
+                    Forme bolinhas pequenas e asse em forno preaquecido, sobre papel manteiga, por aproximadamente 15 a 20 minutos (250° C).<br>
+                    Bom apetite.<br>
+                    <br>
+                    <b>Vídeo Explicativo</b>
+                    <hr>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--PURE-->

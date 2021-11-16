@@ -1,0 +1,126 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg,RGBA(215,194,19,0.36), RGBA(215,174,65,0.26), RGBA(215,174,65,0.86), RGBA(255,214,100,0.87));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.login{
+    text-align:center;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+btn btn-primary {
+    background-color:brown;
+}
+
+ul#btnLinhaEfeito li:hover {
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    scroll-padding-inline: auto;
+}
+
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 200%;
+        animation: cambio 10s infinite;
+    }
+
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 0;
+    }
+
+
+    50% {
+        margin-left: -100%;
+    }
+
+    75% {
+        margin-left: -100%;
+    }
+}
+
+
+

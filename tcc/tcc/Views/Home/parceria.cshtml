@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "privacy";
+}
+<p>
+    Nossa página está aberta a parcerias exclusivas, proporcionamos engajamento e visualizações em cima dos conteúdos criados de nossos parceiros.<br />
+    Ao incorporarmos as Receitas culinarias em nosso site, consequentemente geramos vizualização em cima de sua receita. Feito isso, há uma média de ADSENSE
+    gerado pelo YouTube para recompensar seus afiliados.
+</p>
+
+<div class="text-center">
+    <img src="~/img/parceria/mandereceita.jpg" width="50%">
+</div>
+
+<p>Ao mandar sua receita, você estará colaborando com o desenvolvimento do Site. O envio, deverá ser realizado ao nosso <a href="mailto:godsfoodd@gmail.com">Email</a></p>
+
+<hr />
+<h1 class="text-center">Formulário</h1>
+
+
+<br />
+<p>Para uma praticidade mais adequada a situação, disponibilizamos um formulário por tempo limitado para nossos usuários e afiliados. Com tudo, responderemos nas próximas 24 horas de acordo com a necessidade e frequência do envio. </p>
+<br />
+<hr />
+<script>
+          function validar()
+          {
+            var nome = form1.exampleFormControlInput1.value;
+            var sobrenome = form1.exampleFormControlSelect1.value;
+            var pais = form1.exampleFormControlTextarea1.value;
+           
+
+            if(nome=="" || sobrenome=="" || receita=="")
+            {
+
+              alert("Preencha os campos obrigatórios");
+              return false;
+
+            }
+
+            if(nome.length>15)
+            {
+
+              alert("Nome muito grande");
+              return false;
+
+            }
+            if(sobrenome.length>20)
+            {
+
+              alert("Sobrenome muito grande");
+              return false;
+
+            }
+
+
+
+          }
+
+
+
+</script>
+<form name="form1" action="mailto:godsfodd@gmail.com" method="POST">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Seu E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Assunto</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>Enviar Receitas</option>
+            <option>Suporte</option>
+            <option>FAQ</option>
+            <option>Parceria</option>
+            <option>FeedBack</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Envie sua Receita ou Texto</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Enviar uma imagem ou vídeo (Opcional)</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+    
+    <input type="submit" class="btn btn-primary" value="Enviar" onclick="return validar()">
+</form>
